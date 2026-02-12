@@ -47,10 +47,10 @@ To use the project:
 - Generated a map using SLAM
 - Achieved autonomous navigation using the Nav2 stack
 - 
-## Robot Overview
+## Simulation of the Differential Drive Robot in a Gazebo environment
 ![Differential Drive Robot](images/Differential_Drive_Robot.jpeg)  
 
-## Sensors
+## LIDAR sensor output showing the scanned environment around the robot
 ![LIDAR Sensor](images/LIidar.png)  
 
 ## MIT License
