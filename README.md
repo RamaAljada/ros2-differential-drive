@@ -34,7 +34,7 @@ To use the project:
    - `my_robot_description.zip`
    - `my_robot_controller.zip`
    - `my_robot_bringup.zip`
-   Then extract them into the src/ folder:
+   - Then extract them into the src/ folder:
    unzip my_robot_description.zip -d my_robot_description
    unzip my_robot_controller.zip   -d my_robot_controller
    unzip my_robot_bringup.zip      -d my_robot_bringup
