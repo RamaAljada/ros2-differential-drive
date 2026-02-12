@@ -5,11 +5,11 @@ This project demonstrates the development and simulation of a Differential Drive
 The project focuses on robot modeling, simulation, motion control, sensor integration, SLAM-based mapping, and autonomous navigation using the Nav2 stack.
 
 ## 🎯 Project Objectives
-- Create a robot model using URDF/SDF
+- Create a robot model using URDF
 - Simulate the robot in Gazebo environments
 - Implement basic movement control using `cmd_vel`
 - Design and modify custom Gazebo worlds
-- Integrate sensors (e.g., LIDAR, camera)
+- Integrate sensors LIDAR
 - Generate a map using SLAM
 - Implement autonomous navigation from Point A to Point B using Nav2
 
@@ -26,10 +26,25 @@ The ROS2 packages are uploaded as ZIP files:
 - `my_robot_bringup.zip`
 
 To use the project:
-1. Download the ZIP files
-2. Extract them inside a ROS2 workspace under the `src/` directory (inside your workspace folder)
+1. Create a ROS 2 workspace (if you don't have one yet)
+   ```bash
+   mkdir -p ~/ros2_ws/src
+   cd ~/ros2_ws/src
+2. Download the following files from the repository:
+   - `my_robot_description.zip`
+   - `my_robot_controller.zip`
+   - `my_robot_bringup.zip`
+   Then extract them into the src/ folder:
+   unzip my_robot_description.zip -d my_robot_description
+   unzip my_robot_controller.zip   -d my_robot_controller
+   unzip my_robot_bringup.zip      -d my_robot_bringup
 3. Build the workspace
-4. Launch the simulation using the appropriate launch file
+   cd ~/ros2_ws
+   colcon build --symlink-install
+4. Source the workspace
+   source install/setup.bash
+5. Launch the simulation:
+   ros2 launch my_robot_bringup robot_simulation.launch.py
 
 ## 🧠 Technologies Used
 - ROS2
@@ -47,10 +62,10 @@ To use the project:
 - Generated a map using SLAM
 - Achieved autonomous navigation using the Nav2 stack
 - 
-## Simulation of the Differential Drive Robot in a Gazebo environment
+## Robot in Gazebo Environment
 ![Differential Drive Robot](images/Differential_Drive_Robot.jpeg)  
 
-## LIDAR sensor output showing the scanned environment around the robot
+## LIDAR Scanning the Surroundings
 ![LIDAR Sensor](images/LIidar.png)  
 
 ## MIT License
